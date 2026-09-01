@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* LIGHT THEME (Default) */
   --bg-main: #F5EFE9;
   --bg-alt: #EAE1D8;
   --bg-header: rgba(245, 239, 233, 0.95);
@@ -30,7 +29,6 @@
 }
 
 [data-theme="dark"] {
-  /* DEEP ESPRESSO THEME */
   --bg-main: #32231F;
   --bg-alt: #231815;
   --bg-header: rgba(50, 35, 31, 0.95);
@@ -46,7 +44,6 @@
 }
 
 [data-theme="terra"] {
-  /* TERRACOTTA THEME */
   --bg-main: #B05B43;
   --bg-alt: #9A4E38;
   --bg-header: rgba(176, 91, 67, 0.95);
@@ -86,7 +83,7 @@ header, footer, .toc-item, .service-item, .confirm, .btn, .modal-card, .field in
 .container{width:min(1280px,calc(100% - 48px));margin:auto}
 .narrow{width:min(760px,calc(100% - 48px));margin:auto}
 
-.eyebrow{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);font-weight:600; margin-bottom: 8px; display: block;}
+.eyebrow{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);font-weight:600; margin-bottom: 12px; display: block;}
 .display{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.01em}
 h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:400;line-height:1.05; color: var(--text-main);}
 h1{font-size:clamp(40px,5vw,64px)}
@@ -256,7 +253,7 @@ header.scrolled{border-bottom-color:var(--line)}
 
 /* --- YEAR-LONG PROGRAM GRID (DARK) --- */
 .program-section {
-  background: #231815; /* Dark background mapping */
+  background: #231815;
   color: #F5EFE9;
   padding: 60px 0;
   margin-top: 40px;
@@ -471,7 +468,7 @@ select option { background: var(--bg-main); color: var(--text-main); }
 
 <header id="header">
   <div class="container nav">
-    <a class="brand-container" href="index.html" aria-label="SHE. academy home">
+    <a class="brand-container" href="../index.html" aria-label="SHE. academy home">
       <div class="brand-main">
         <span class="she">SHE</span><span class="dot">.</span><span class="academy">academy</span>
       </div>
@@ -479,10 +476,10 @@ select option { background: var(--bg-main); color: var(--text-main); }
     </a>
     <nav class="navlinks" aria-label="Main navigation">
       <a href="index.html" style="color:var(--accent);">For Women</a>
-      <a href="for-men/index.html">For Men</a>
-      <a href="index.html#pricing">Pricelist</a>
-      <a href="index.html#areas">Areas</a>
-      <a href="index.html#about">Team</a>
+      <a href="../for-men/index.html">For Men</a>
+      <a href="../index.html#pricing">Pricelist</a>
+      <a href="../index.html#areas">Areas</a>
+      <a href="../index.html#about">Team</a>
       <a href="#" onclick="openContact();return false;">Contact</a>
       <a class="nav-book" href="#" onclick="openBooking();return false;">Book a Session</a>
     </nav>
@@ -491,10 +488,10 @@ select option { background: var(--bg-main); color: var(--text-main); }
   <div id="mobileNav" style="display:none;background:var(--bg-main);border-top:1px solid var(--line);padding:14px 20px">
     <div class="container" style="display:grid;gap:10px;font-size:11px;text-transform:uppercase;letter-spacing:.12em; font-weight:600;">
       <a href="index.html" style="color:var(--accent);">For Women</a>
-      <a href="for-men/index.html">For Men</a>
-      <a href="index.html#pricing">Pricelist</a>
-      <a href="index.html#areas">Areas</a>
-      <a href="index.html#about">Team</a>
+      <a href="../for-men/index.html">For Men</a>
+      <a href="../index.html#pricing">Pricelist</a>
+      <a href="../index.html#areas">Areas</a>
+      <a href="../index.html#about">Team</a>
       <a href="#" onclick="openContact();toggleMobileNav();return false;">Contact</a>
       <a href="#" onclick="openFeedback();toggleMobileNav();return false;">Leave Feedback</a>
       <a href="#" style="color:var(--accent)" onclick="openBooking();toggleMobileNav();return false;">Book a Session</a>
@@ -825,7 +822,7 @@ select option { background: var(--bg-main); color: var(--text-main); }
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="brand-container" href="index.html" style="margin-bottom:16px;">
+        <a class="brand-container" href="../index.html" style="margin-bottom:16px;">
           <div class="brand-main">
             <span class="she">SHE</span><span class="dot">.</span>
           </div>
@@ -838,11 +835,11 @@ select option { background: var(--bg-main); color: var(--text-main); }
       </div>
       <div><h4>Navigate</h4>
         <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="for-women/index.html">For Women</a>
-          <a href="for-men/index.html">For Men</a>
-          <a href="index.html#pricing">Pricing</a>
-          <a href="index.html#about">About Us</a>
+          <a href="../index.html">Home</a>
+          <a href="index.html">For Women</a>
+          <a href="../for-men/index.html">For Men</a>
+          <a href="../index.html#pricing">Pricing</a>
+          <a href="../index.html#about">About Us</a>
           <a href="#" onclick="openContact();return false;">Contact</a>
         </div>
       </div>
@@ -954,6 +951,13 @@ select option { background: var(--bg-main); color: var(--text-main); }
             <optgroup label="For Women - Year-long Program">
               <option>Feminine &amp; Vital Essence</option>
             </optgroup>
+            <optgroup label="For Men">
+              <option>Prostate Mapping</option>
+              <option>Working with Scars and Pain</option>
+              <option>Working with Erection and Ejaculation</option>
+              <option>Working with Problematic Pornography Use</option>
+              <option>Face Massage</option>
+            </optgroup>
             <optgroup label="Consultations">
               <option>Individual Consultation</option>
               <option>Not sure yet - please advise</option>
@@ -967,10 +971,10 @@ select option { background: var(--bg-main); color: var(--text-main); }
             <option>No preference</option>
             <option>Daniela</option>
             <option>Joanna</option>
-            <option>Kirill</option>
             <option>Ewa</option>
-            <option>Katrine</option>
+            <option>Kirill</option>
             <option>Marek</option>
+            <option>Katrine</option>
             <option>Kristoffer</option>
           </select>
         </div>
