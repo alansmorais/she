@@ -497,6 +497,77 @@ select option { background: var(--bg-main); color: var(--text-main); }
 
 <main>
 
+<style>
+  .hero {
+    padding: 64px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .hero-copy .eyebrow {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7a6f5d;
+    margin-bottom: 16px;
+  }
+
+  .hero-copy .display {
+    font-size: 44px;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .hero-copy .display em {
+    font-style: italic;
+    color: #7a6f5d;
+  }
+
+  .hero-copy .lead {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #4a4438;
+  }
+
+  .hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Stack on small screens */
+  @media (max-width: 800px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .hero-image {
+      order: 2;
+    }
+
+    .hero-image img {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
